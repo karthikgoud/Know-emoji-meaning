@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Mark 8 - Emoji Interperter
 
 # Live link:
 https://know-emoji-meaning.netlify.app/
