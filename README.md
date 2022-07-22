@@ -1,4 +1,5 @@
 # Mark 8 - Emoji Interperter
+A simple react app that tells you the meaning of an Emoji by click on list of emoji or pasting emoji in input box.
 
 # Live link:
 https://know-emoji-meaning.netlify.app/
