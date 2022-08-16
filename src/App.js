@@ -35,8 +35,16 @@ function App() {
 
   function emojiInputHandler(event) {
     const userInput = event.target.value;
-    const meaning = emojiObject[userInput];
-    setEmoji(meaning);
+
+    const keys = Object.keys(emojiObject);
+    // console.log(keys);
+
+    if (keys.includes(userInput)) {
+      const meaning = emojiObject[userInput];
+      setEmoji(meaning);
+    } else {
+      setEmoji("Emoji entered not found");
+    }
   }
 
   function emojiClickHandler(emoji) {
@@ -57,15 +65,17 @@ function App() {
           className: "output-container",
           fontSize: "1.5rem",
           fontWeight: "bolder",
-          paddingTop: "1rem",
-          color: "blue",
-          marginBottom: "1rem",
+          color: "white",
+          background: "darkcyan",
+          padding: "0.5rem 1rem",
+          width: "50%",
+          margin: "auto",
         }}
       >
         {emoji}
       </div>
       <h2>
-        Click <span style={{ color: "steelblue" }}>Emoji`s ...</span> ⬇️
+        Click <span style={{ color: "red" }}>Emoji`s below...</span> ⬇️
       </h2>
       <div style={{ width: "900px", margin: "0 auto" }}>
         {emojiArray.map((emoji) => {

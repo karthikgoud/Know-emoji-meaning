@@ -33,3 +33,10 @@ input {
   border-radius: 50px;
   transition: 0.2s ease-out;
 }
+
+.output-container{
+  width: 50%;
+  padding: 1rem;
+
+
+}
