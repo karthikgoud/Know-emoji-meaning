@@ -59,7 +59,21 @@ function App() {
         onChange={emojiInputHandler}
         placeholder="Paste emoji here to know meaning."
       />
-
+      
+        <div
+        style={{
+          className: "output-container",
+          fontSize: "1.5rem",
+          fontWeight: "bolder",
+          color: "white",
+          background: "darkcyan",
+          padding: "0.5rem 1rem",
+          width: "50%",
+          margin: "auto",
+        }}
+      >
+        Meaning here ⬇️:
+      </div>
       <div
         style={{
           className: "output-container",
@@ -74,20 +88,7 @@ function App() {
       >
         {emoji}
       </div>
-      <div
-        style={{
-          className: "output-container",
-          fontSize: "1.5rem",
-          fontWeight: "bolder",
-          color: "white",
-          background: "darkcyan",
-          padding: "0.5rem 1rem",
-          width: "50%",
-          margin: "auto",
-        }}
-      >
-        Output:
-      </div>
+     
       <h2>
         Click <span style={{ color: "red" }}>Emoji`s below...</span> ⬇️
       </h2>
