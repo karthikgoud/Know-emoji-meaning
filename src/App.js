@@ -43,7 +43,7 @@ function App() {
       const meaning = emojiObject[userInput];
       setEmoji(meaning);
     } else {
-      setEmoji("Emoji entered not found");
+      setEmoji("❌ Emoji entered not found ❌");
     }
   }
 
@@ -59,38 +59,39 @@ function App() {
         onChange={emojiInputHandler}
         placeholder="Paste emoji here to know meaning."
       />
-      
-        <div
+
+      <div
         style={{
           className: "output-container",
           fontSize: "1.5rem",
           fontWeight: "bolder",
-          color: "white",
-          background: "darkcyan",
+          color: "darkcyan",
           padding: "0.5rem 1rem",
           width: "50%",
           margin: "auto",
         }}
       >
-        Meaning here ⬇️:
+        ⬇️ Meaning here ⬇️
       </div>
       <div
         style={{
           className: "output-container",
           fontSize: "1.5rem",
           fontWeight: "bolder",
-          color: "white",
+          color: "yellow",
           background: "darkcyan",
           padding: "0.5rem 1rem",
           width: "50%",
           margin: "auto",
+          borderRadius: "0.6rem",
         }}
       >
         {emoji}
       </div>
-     
+
       <h2>
-        Click <span style={{ color: "red" }}>Emoji`s below...</span> ⬇️
+        Click <span style={{ color: "red" }}>Emoji`s ⬇️ </span>below to know
+        meaning
       </h2>
       <div style={{ width: "900px", margin: "0 auto" }}>
         {emojiArray.map((emoji) => {
