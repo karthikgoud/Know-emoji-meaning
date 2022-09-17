@@ -27,6 +27,12 @@ function App() {
     "🛸": "Flying Saucer",
     "😉": "Winking Face",
     "💣": "Bomb",
+    "⛽": "Fuel Pump",
+    "🚁": "Helicopter",
+    "🥦": "Broccoli",
+    "🍕": "Pizza",
+    "📠": "Fax Machine",
+    "⚙️": "Gear",
   };
 
   const emojiArray = Object.keys(emojiObject);
@@ -60,51 +66,20 @@ function App() {
         placeholder="Paste emoji here to know meaning."
       />
 
-      <div
-        style={{
-          className: "output-container",
-          fontSize: "1.5rem",
-          fontWeight: "bolder",
-          color: "darkcyan",
-          padding: "0.5rem 1rem",
-          width: "50%",
-          margin: "auto",
-        }}
-      >
-        ⬇️ Meaning here ⬇️
-      </div>
-      <div
-        style={{
-          className: "output-container",
-          fontSize: "1.5rem",
-          fontWeight: "bolder",
-          color: "yellow",
-          background: "darkcyan",
-          padding: "0.5rem 1rem",
-          width: "50%",
-          margin: "auto",
-          borderRadius: "0.6rem",
-        }}
-      >
-        {emoji}
-      </div>
+      <div className="output-container"> Emoji Meaning </div>
+      <div className="output-meaning">{emoji}</div>
 
-      <h2>
+      <h2 className="info">
         Click <span style={{ color: "red" }}>Emoji`s ⬇️ </span>below to know
         meaning
       </h2>
-      <div style={{ width: "900px", margin: "0 auto" }}>
+      <div className="emoji-container">
         {emojiArray.map((emoji) => {
           return (
             <span
               className="emoji-icon"
               onClick={() => emojiClickHandler(emoji)}
               key={emoji}
-              style={{
-                padding: "0.5rem",
-                fontSize: "2rem",
-                margin: "0.4rem",
-              }}
             >
               {emoji}
             </span>

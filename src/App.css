@@ -15,7 +15,7 @@ h1,h2{
 }
 
 input {
-  width: 70%;
+  width: 60%;
   padding: 0.5rem 1rem;
   font-size: 1.4rem;
   border-radius: 6px;
@@ -23,7 +23,15 @@ input {
   margin: 1rem;
 }
 
+.emoji-container{
+  width: 800px;
+  margin: 0 auto;
+}
+
 .emoji-icon{
+  padding: 0.5rem;
+  font-size: 2rem;
+  margin: 0.4rem;
   transition: 0.2s ease-in;
 }
 
@@ -35,8 +43,56 @@ input {
 }
 
 .output-container{
+  font-size: 1.6rem;
+  font-weight: bolder;
+  color: darkblue;
   width: 50%;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  text-decoration: underline;
+}
+
+.output-meaning{
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: yellow;
+  background: darkcyan;
+  padding: 0.5rem 1rem;
+  width: 50%;
+  margin: auto;
+  border-radius: 0.6rem;
+}
 
 
+
+
+/* ----------------425px------------ */
+
+@media (max-width:426px){
+
+  .output-container{
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .output-meaning{
+    width: 70%;
+    font-size: 1.2rem;
+  }
+
+  .emoji-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin: 1rem 0;
+  }
+
+  .info{
+    font-size: 1rem;
+    padding: 1rem;
+    width: 70%;
+    margin: 0 auto;
+  }
 }
